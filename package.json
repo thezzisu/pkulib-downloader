@@ -1,0 +1,9 @@
+{
+  "name": "pkulib-downloader",
+  "version": "0.0.1",
+  "description": "Download PKU Library books",
+  "repository": "git@github.com:thezzisu/pkulib-downloader.git",
+  "author": "thezzisu <thezzisu@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
