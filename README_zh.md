@@ -1,11 +1,11 @@
 <div align="center">
   <img src="./assets/PKULogo.svg" width="144" height="144">
-  <h1>PKULib Downloader</h1>
+  <h1>摆大图书馆下载器</h1>
 
   <table>
     <tr>
-      <th>Installation Source</th>
-      <th>Click to Install</th>
+      <th>安装源</th>
+      <th>点击安装</th>
     </tr>
     <tr>
       <td>GitHub (latest)</td>
@@ -32,4 +32,5 @@
       </td>
     </tr>
   </table>
+
 </div>
