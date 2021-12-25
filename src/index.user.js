@@ -80,7 +80,9 @@ async function useDownloader() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `${pdfId}.pdf`
+    let filename = `${pdfId}.pdf`
+    filename = prompt('请输入文件名', filename) || filename
+    a.download = filename
     a.click()
   }
 
