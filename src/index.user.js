@@ -97,7 +97,7 @@ async function wait(ms) {
 }
 
 /**
- * @param {() => void} save
+ * @param {() => Promise<void>} save
  */
 async function useUI(save) {
   const container = document.createElement('div')
@@ -110,7 +110,13 @@ async function useUI(save) {
   btn.innerText = '下载'
   container.appendChild(btn)
   btn.addEventListener('click', () => {
+    btn.textContent = '下载中...'
+    btn.disabled = true
     save()
+      .catch(() => {})
+      .finally(() => {
+        btn.textContent = '下载'
+      })
   })
 }
 
